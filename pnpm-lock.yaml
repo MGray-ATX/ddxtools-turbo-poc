@@ -18,6 +18,12 @@ catalogs:
     react-dom:
       specifier: ^19.1.0
       version: 19.1.0
+    typescript:
+      specifier: ^5.8.3
+      version: 5.8.3
+    vite:
+      specifier: ^7.0.4
+      version: 7.0.4
 
 importers:
 
@@ -111,6 +117,15 @@ importers:
         version: 5.8.3
       vite:
         specifier: ^7.0.4
+        version: 7.0.4(@types/node@22.15.3)
+
+  packages/base-ui:
+    devDependencies:
+      typescript:
+        specifier: 'catalog:'
+        version: 5.8.3
+      vite:
+        specifier: 'catalog:'
         version: 7.0.4(@types/node@22.15.3)
 
   packages/eslint-config:
