@@ -1,25 +1,22 @@
 import { createRoot } from "react-dom/client";
 import "./style.css";
-import typescriptLogo from "/typescript.svg";
-import { Header, Counter } from "@repo/ui";
+import App from "./App";
+import { store } from './stores/store'
+import { Provider } from 'react-redux'
 
-const App = () => (
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" className="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img
-        src={typescriptLogo}
-        className="logo vanilla"
-        alt="TypeScript logo"
-      />
-    </a>
-    <Header title="Web" />
-    <div className="card">
-      <Counter />
-    </div>
-  </div>
-);
+const container = document.getElementById('app')
 
-createRoot(document.getElementById("app")!).render(<App />);
+if (container) {
+    const root = createRoot(container)
+
+    root.render(
+        <Provider store={store}>
+            <App />
+        </Provider>,
+    )
+} else {
+    throw new Error(
+        "Root element with ID 'root' was not found in the document. Ensure there is a corresponding HTML element with the ID 'root' in your HTML file.",
+    )
+}
+

@@ -10,9 +10,11 @@
     "lint": "eslint \"src/**/*.ts\""
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
     "@repo/ui": "workspace:*",
     "react": "catalog:",
-    "react-dom": "catalog:"
+    "react-dom": "catalog:",
+    "react-redux": "^9.2.0"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
