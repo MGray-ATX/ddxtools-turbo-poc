@@ -121,6 +121,9 @@ importers:
 
   packages/base-ui:
     devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
       typescript:
         specifier: 'catalog:'
         version: 5.8.3
