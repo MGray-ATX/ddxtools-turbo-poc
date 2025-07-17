@@ -5,6 +5,7 @@ import * as path from "path";
 export default defineConfig({
   plugins: [react()],
   build: {
+    minify: false,
     lib: {
       entry: path.resolve(__dirname, "src/index.tsx"),
       name: "@repo/base-ui",

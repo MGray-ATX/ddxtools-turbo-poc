@@ -3,6 +3,8 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
+    "clean": "pnpx rimraf dist && pnpm rimraf docs && pnpm rimraf package",
+    "clean:node_modules": "rimraf node_modules */node_modules */*/node_modules",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
@@ -10,6 +12,7 @@
   },
   "devDependencies": {
     "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
     "turbo": "^2.5.4",
     "typescript": "5.8.3"
   },

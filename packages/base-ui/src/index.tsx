@@ -1,31 +1,15 @@
-// import "./style.css";
-// import typescriptLogo from "./typescript.svg";
-// import { Counter, Header } from "@repo/ui";
-//
-// const App = () => (
-//     <div>
-//         <a href="https://vitejs.dev" target="_blank">
-//             <img src="/vite.svg" className="logo" alt="Vite logo" />
-//         </a>
-//         <a href="https://www.typescriptlang.org/" target="_blank">
-//             <img
-//                 src={typescriptLogo}
-//                 className="logo vanilla"
-//                 alt="TypeScript logo"
-//             />
-//         </a>
-//         <Header title="Web BaseUI" />
-//         <div className="card">
-//             <Counter />
-//         </div>
-//     </div>
-// );
-//
-// export default App;
+import { Provider as ToolsProvider } from 'react-redux'
+import { rtkStore } from "./stores/store";
+import { useAppDispatch, useAppSelector } from "./hooks/hooks";
+import { incrementCount } from "./slices/testSlice";
 
-const BaseUI = () => {
 
-    return (<div>BASE UI index</div>)
-}
-
-export default BaseUI
+// const BaseUI = ({ children }: Readonly<PropsWithChildren>) => {
+//     return (
+//     <Provider store={store}>
+//         <div>BASE UI index wrapped in provider</div>
+//         {children}
+//     </Provider>)
+// }
+export { rtkStore, ToolsProvider, useAppDispatch,useAppSelector, incrementCount};
+// export default ToolsProvider

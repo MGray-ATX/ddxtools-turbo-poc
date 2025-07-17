@@ -1,7 +1,7 @@
 import { createRoot } from "react-dom/client";
 import "./style.css";
 import App from "./App";
-import { store } from './stores/store'
+import { rtkStore } from '../stores/store'
 import { Provider } from 'react-redux'
 
 const container = document.getElementById('app')
@@ -10,7 +10,7 @@ if (container) {
     const root = createRoot(container)
 
     root.render(
-        <Provider store={store}>
+        <Provider store={rtkStore}>
             <App />
         </Provider>,
     )

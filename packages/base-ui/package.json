@@ -6,13 +6,16 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "prepublish": "rm -rf ./dist && npm run build",
     "preview": "vite preview"
   },
   "main": "./dist/base-ui.umd.js",
   "module": "./dist/base-ui.es.js",
   "dependencies": {
+    "@repo/ui": "workspace:*"
+  },
+  "peerDependencies": {
     "@reduxjs/toolkit": "^2.8.2",
-    "@repo/ui": "workspace:*",
     "react": "catalog:",
     "react-dom": "catalog:",
     "react-redux": "^9.2.0"
