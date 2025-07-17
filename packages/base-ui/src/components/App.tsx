@@ -1,7 +1,6 @@
 import "./style.css";
 import typescriptLogo from "/typescript.svg";
 import { Counter, Header } from "@repo/ui";
-import BaseUI from "@repo/base-ui";
 
 const App = () => (
     <div>
@@ -19,8 +18,6 @@ const App = () => (
         <div className="card">
             <Counter />
         </div>
-
-        <BaseUI/>
     </div>
 );
 

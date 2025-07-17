@@ -6,6 +6,8 @@
     "skipLibCheck": true,
     "target": "ES2024",
     "useDefineForClassFields": true,
+    "jsx": "react-jsx",
+
 
     /* Bundler mode */
     "allowImportingTsExtensions": true,

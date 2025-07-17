@@ -10,11 +10,12 @@
     "lint": "eslint \"src/**/*.ts\""
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^2.8.2",
+    "@reduxjs/toolkit": "catalog:",
+    "@repo/base-ui": "workspace:*",
     "@repo/ui": "workspace:*",
     "react": "catalog:",
     "react-dom": "catalog:",
-    "react-redux": "^9.2.0"
+    "react-redux": "catalog:"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
@@ -23,7 +24,7 @@
     "@types/react-dom": "catalog:",
     "@vitejs/plugin-react": "^4.6.0",
     "eslint": "^8.57.0",
-    "typescript": "^5.8.3",
-    "vite": "^7.0.4"
+    "typescript": "catalog:",
+    "vite": "catalog:"
   }
 }
